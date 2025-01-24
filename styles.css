@@ -1,0 +1,183 @@
+body{
+    
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    margin: 0;
+    background-color: #e0e0e0;
+  
+}
+.frame{
+    background-color: black;
+    width: 100px;
+    height: 300px;
+    border-radius: 10px;
+    position: relative;
+    
+    margin: auto;
+}
+
+.circle {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    position: absolute;
+    opacity: 0.4;
+    transition: opacity 0.5s ease;
+}
+
+.red {
+    background-color: rgb(255, 0, 0);
+    top: 20px;
+    left: 10px;
+}
+
+.yellow {
+    background-color: rgb(252, 252, 2);
+    top: 110px;
+    left: 10px;
+
+}
+
+.green {
+    background-color: rgb(39, 245, 11);
+    top: 200px;
+    left: 10px;
+}
+
+.active {
+    opacity: 1;
+}
+
+  .shiva-ling {
+    position: relative;
+    width: 100px;
+    height: 150px;
+    background-color: black;
+    border-radius: 50px 50px 0 0;
+  }
+  .shiva-ling::after {
+    content: '';
+    position: absolute;
+    bottom: -40px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 150px;
+    height: 40px;
+    background-color: black;
+    border-radius: 0 0 50% 50%;
+  }
+  .mark {
+    position: absolute;
+    top: 50px;
+    left: 15%;
+    width: 70px;
+    height: 10px;
+    background-color: white;
+    border-radius: 5px;
+  }
+  .mark::after {
+    content: '';
+    position: absolute;
+    top: 20px;
+    left: 0;
+    width: 70px;
+    height: 10px;
+    background-color: white;
+    border-radius: 5px;
+  }
+
+
+  .flag-pole {
+    display: flex;
+    align-items: flex-start;
+    gap: 5px;
+    position: relative;
+  }
+  .pole {
+    width: 100px;
+    height: 500px;
+    
+    border: #462323 5px solid;
+  }
+  .flag {
+    
+    width: 400px;
+    height: 180px;
+    border: 2px solid black;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+  }
+  .stripe {
+    height: 33.33%;
+    width: 200px;
+  }
+  .orange {
+    background-color: #ff9933;
+  }
+  .white {
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .green {
+    background-color: #138808;
+  }
+  .chakra {
+    width: 60px;
+    height: 60px;
+    border: 3px solid blue;
+    border-radius: 50%;
+    position: relative;
+  }
+  .chakra::before, .chakra::after {
+    content: '';
+    position: absolute;
+    background-color: blue;
+  }
+  .chakra::before {
+    width: 2px;
+    height: 100%;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  .chakra::after {
+    width: 100%;
+    height: 2px;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  .chakra-line {
+    position: absolute;
+    background-color: blue;
+    width: 1px;
+    height: 60px;
+    top: 0;
+    left: 50%;
+    transform-origin: center;
+    transform: rotate(var(--angle));
+  }
+  .thread {
+    position: absolute;
+    width: 5px;
+    height: 10px;
+    background-color: rgb(12, 12, 12);
+    top: 10%;
+    left: -6px;
+  }
+  .thread::before {
+    content: '';
+    position: absolute;
+    width: 2px;
+    height: 150px;
+    background-color: grey;
+    left: 50%;
+    top: 100%;
+  }
